@@ -69,7 +69,7 @@ public class FindingElement {
         // Поиск сообщения "Your message has been successfully sent to our team."
         WebElement successMessage = driver.findElement(By.xpath("//*[@id='center_column']/p"));
         String receivedMessage = successMessage.getText();
-        assertEquals("Your message has been successfully sent to our team.", receivedMessage, "Что то пошло не так, но в твоем случае все так.");
+        assertEquals("Your message has been successfully sent to our team.", receivedMessage, "Что то пошло не так.");
 
                 driver.quit();
  //   return false;
